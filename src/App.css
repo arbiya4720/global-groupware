@@ -1,0 +1,14 @@
+body{
+  font-family: calibri;
+}
+.login{
+  min-height:100vh;
+  background: url("https://images.unsplash.com/photo-1614850523060-8da1d56ae167?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29sb3JmdWwlMjBsaWdodGluZ3xlbnwwfHwwfHx8MA%3D%3D");
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.login-container{
+ backdrop-filter: blur(3px);
+ background-color: rgba(255,255,255,0.7);
+}
