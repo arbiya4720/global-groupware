@@ -1,50 +1,35 @@
-# React + TypeScript + Vite
+## global-groupware  EmployWise Assignment
+## Overview
+This project is a React application that integrates with the Reqres API to perform basic user management functions. It includes authentication, user listing with pagination, and CRUD operations (Edit & Delete).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Lecvel 1
+Tech Stack
+Frontend: React.js+typescript , Axios
+State Management: React Hooks
+HTTP Requests: Axios
+Routing: React Router DOM
+UI Frameworks: Bootstrap, React Bootstrap
+Validation: Yup with React Hook Form
+Alerts & Notifications: SweetAlert
+Email: eve.holt@reqres.in
+Password: cityslicka
+On successful login, the token is stored and the user is redirected to the Users List page.
 
-Currently, two official plugins are available:
+## Level 2
+Fetches and displays a paginated list of users. API Endpoint
+GET: /api/users?page=1 Displays user’s first name, last name, and avatar Supports pagination using API requests.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Level 3: Edit, Delete, and Update Users
+Edit User: Clicking Edit opens a pre-filled form allowing the update of: First name Last name Email
+API Endpoint: PUT /api/users/{id}
 
-## Expanding the ESLint configuration
+Delete User: Clicking Delete removes the user from the list.
+API Endpoint: DELETE /api/users/{id} Proper success/error messages are displayed for all operations.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation & Setup
+git clone https://github.com/arbiya4720/global-groupware/ 
+cd employwise-assignment 
+npm install
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Running the Project
+npm run dev
